@@ -1,22 +1,39 @@
-.container {
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  #container {
     display: flex;
     flex-direction: column;
-    width: 336px; /* 16 squares * 20px + 15 gaps * 1px */
-}
-
-.row {
+    gap: 2px;
+    margin: 0 auto;
+    max-width: 90vmin;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .row {
     display: flex;
-    flex-direction: row;
-}
-
-.square {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border: 1px solid black;
-    margin: 0 1px 1px 0;
-}
-
-.square:hover{
-    background-color: red;
-}
+    gap: 2px;
+    flex: 1;
+  }
+  
+  .square {
+    flex: 1;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .square:hover {
+    background-color: #4caf50;
+    cursor: pointer;
+  }
+  
